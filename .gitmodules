@@ -1,0 +1,6 @@
+[submodule "init.lua"]
+	path = init.lua
+	url = ssh://git@ssh.github.com:443/aniketmondal092009/init.lua.git
+[submodule "nvim"]
+	path = nvim
+	url = ssh://git@ssh.github.com:443/aniketmondal092009/init.lua.git
