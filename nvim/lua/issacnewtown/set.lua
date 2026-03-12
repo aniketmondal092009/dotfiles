@@ -1,3 +1,5 @@
+-- Editor options
+
 vim.opt.clipboard = "unnamedplus"
 vim.opt.guicursor = ""
 

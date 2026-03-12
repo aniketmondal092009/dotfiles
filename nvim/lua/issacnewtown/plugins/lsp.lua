@@ -17,7 +17,6 @@ return {
         -- require("issacnewtown.lspconfig.java")
         -- require("issacnewtown.lspconfig.lua_ls")
 
-
         vim.lsp.config("jdtls", {
             settings = {
                 java = {
@@ -43,9 +42,6 @@ return {
 
 
 
-
-
-
         vim.lsp.enable({
             "lua_ls",
             "rust_analyzer",
@@ -66,8 +62,7 @@ return {
             },
             window = {
                 -- completion = cmp.config.window.bordered(),
-                documentation = { border = "rounded" },
-            },
+                documentation = { border = "rounded" }, },
             mapping = cmp.mapping.preset.insert({
                 ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
                 ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
@@ -88,6 +83,12 @@ return {
             update_in_insert = true,
             virtual_text = true,
             jump = { float = true },
+            float = {
+
+                border = "rounded",
+                source = "always",
+
+            }
         })
     end
 }
