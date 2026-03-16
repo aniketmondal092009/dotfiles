@@ -1,4 +1,5 @@
 return {
+
     {
         "atlas.nvim",
         dir = "~/dev/atlastheme",
@@ -10,16 +11,28 @@ return {
             require('atlas').setup({
                 variant = "main",
 
-                disable_background = false,
+                disable_background = true,
                 styles = {
                     italic = false,
                 },
             })
 
+            vim.cmd([[colorscheme atlas]])
 
-            vim.cmd.colorscheme("atlas")
+            local highlight_groups = {
+                -- "NormalFloat", 
+                -- "FloatBorder", 
+                -- "Pmenu",       -- Popup menu (completions)
+                -- "PmenuSel",    -- Selected item in popup
+                -- "NormalNC",    -- Normal text in non-current windows
+            }
 
-
+            -- vim.api.nvim_set_hl(0, "Pmenu", { bg = "#333333" })
+            -- vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#444444" })
+            -- vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE" })
+            -- vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
+            -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+            
         end
 
     },

@@ -60,7 +60,7 @@ static double maxlatency = 33;
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
  */
-static unsigned int blinktimeout = 800;
+static unsigned int blinktimeout = 0;
 
 /*
  * thickness of underline and bar cursors
@@ -96,31 +96,31 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#261d35",
+	"#bb676f",
+	"#6d9059",
+	"#a07d4c",
+	"#5c86bc",
+	"#9e6db4",
+	"#4e9190",
+	"#b2a2d1",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#584875",
+	"#cf7e85",
+	"#80a66b",
+	"#b7915c",
+	"#5c86bc",
+	"#b284c6",
+	"#5ea7a7",
+	"#e5dff1",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	"#ebdbb2", /* default foreground colour */
+	"#e0def4", /* default foreground colour */
 	"#181616", /* default background colour */
 };
 
