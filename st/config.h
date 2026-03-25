@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraCode Nerd Font:pixelsize=24:antialias=true:autohint=true";
+static char *font = "monospace:pixelsize=22:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -103,7 +103,7 @@ static const char *colorname[] = {
 	"#5c86bc",
 	"#9e6db4",
 	"#4e9190",
-	"#b2a2d1",
+	"#e0def4", /* default foreground colour */
 
 	/* 8 bright colors */
 	"#584875",
@@ -121,7 +121,7 @@ static const char *colorname[] = {
 	"#cccccc",
 	"#555555",
 	"#e0def4", /* default foreground colour */
-	"#181616", /* default background colour */
+	"#111111", /* default background colour */
 };
 
 
